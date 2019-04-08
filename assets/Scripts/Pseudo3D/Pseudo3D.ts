@@ -74,7 +74,7 @@ export default class Pseudo3D extends cc.Component {
 			let h = obj.position.x - this.currentCamera.position.x;
 
 			// 应用摄影机旋转矩阵
-			let p = Utils.matrix2d(new cc.Vec2(h, v), this.cameraMatrix);
+			let p = Pseudo3D.matrix2d(new cc.Vec2(h, v), this.cameraMatrix);
 
 			if (p.y < -200) {
 				// 过于靠近摄影机则不可见
