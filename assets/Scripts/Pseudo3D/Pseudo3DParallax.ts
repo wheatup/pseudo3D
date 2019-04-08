@@ -25,7 +25,7 @@ export default class Pseudo3DParallax extends cc.Component {
 	}
 
 	update(dt) {
-		let angle = Pseudo3D.$.currentCamera.rotation;
+		let angle = this.camera.rotation;
 		while (angle < 0) {
 			angle += Math.PI;
 		}
