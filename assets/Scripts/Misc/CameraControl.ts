@@ -44,9 +44,9 @@ export default class CameraControl extends cc.Component {
 
 		if (keyCode === cc.macro.KEY.a || keyCode === cc.macro.KEY.left) {
 			this.keys.LEFT = true;
-		}else if (keyCode === cc.macro.KEY.d || keyCode === cc.macro.KEY.right) {
+		} else if (keyCode === cc.macro.KEY.d || keyCode === cc.macro.KEY.right) {
 			this.keys.RIGHT = true;
-		} 
+		}
 	}
 
 	onKeyUp({ keyCode }) {
@@ -55,7 +55,7 @@ export default class CameraControl extends cc.Component {
 		} else if (keyCode === cc.macro.KEY.s || keyCode === cc.macro.KEY.down) {
 			this.keys.DOWN = false;
 		}
-		
+
 		if (keyCode === cc.macro.KEY.a || keyCode === cc.macro.KEY.left) {
 			this.keys.LEFT = false;
 		} else if (keyCode === cc.macro.KEY.d || keyCode === cc.macro.KEY.right) {

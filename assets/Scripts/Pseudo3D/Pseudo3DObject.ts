@@ -3,7 +3,7 @@
  * @author wheatup
  */
 
-const {ccclass, property} = cc._decorator;
+const { ccclass, property } = cc._decorator;
 
 @ccclass
 export default class Pseudo3DObject extends cc.Component {
@@ -28,13 +28,13 @@ export default class Pseudo3DObject extends cc.Component {
 	orgShadowPosition: cc.Vec2 = null;
 	orgShadowScale: cc.Vec2 = null;
 
-	onLoad(){
+	onLoad() {
 		this.body = this.body || this.node.children[0] || this.node;
 
 		this.orgPosition = new cc.Vec2(this.body.x, this.body.y);
 		this.orgScale = new cc.Vec2(this.node.scaleX, this.node.scaleY);
 
-		if(this.shadow){
+		if (this.shadow) {
 			this.orgShadowPosition = new cc.Vec2(this.shadow.x, this.shadow.y);
 			this.orgShadowScale = new cc.Vec2(this.shadow.scaleX, this.shadow.scaleY);
 		}
