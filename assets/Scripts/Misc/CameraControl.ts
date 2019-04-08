@@ -38,22 +38,26 @@ export default class CameraControl extends cc.Component {
 	onKeyDown({ keyCode }) {
 		if (keyCode === cc.macro.KEY.w || keyCode === cc.macro.KEY.up) {
 			this.keys.UP = true;
-		} else if (keyCode === cc.macro.KEY.a || keyCode === cc.macro.KEY.left) {
-			this.keys.LEFT = true;
 		} else if (keyCode === cc.macro.KEY.s || keyCode === cc.macro.KEY.down) {
 			this.keys.DOWN = true;
-		} else if (keyCode === cc.macro.KEY.d || keyCode === cc.macro.KEY.right) {
-			this.keys.RIGHT = true;
 		}
+
+		if (keyCode === cc.macro.KEY.a || keyCode === cc.macro.KEY.left) {
+			this.keys.LEFT = true;
+		}else if (keyCode === cc.macro.KEY.d || keyCode === cc.macro.KEY.right) {
+			this.keys.RIGHT = true;
+		} 
 	}
 
 	onKeyUp({ keyCode }) {
 		if (keyCode === cc.macro.KEY.w || keyCode === cc.macro.KEY.up) {
 			this.keys.UP = false;
-		} else if (keyCode === cc.macro.KEY.a || keyCode === cc.macro.KEY.left) {
-			this.keys.LEFT = false;
 		} else if (keyCode === cc.macro.KEY.s || keyCode === cc.macro.KEY.down) {
 			this.keys.DOWN = false;
+		}
+		
+		if (keyCode === cc.macro.KEY.a || keyCode === cc.macro.KEY.left) {
+			this.keys.LEFT = false;
 		} else if (keyCode === cc.macro.KEY.d || keyCode === cc.macro.KEY.right) {
 			this.keys.RIGHT = false;
 		}
