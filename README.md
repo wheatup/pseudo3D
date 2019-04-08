@@ -1,15 +1,17 @@
-# Pseudo3D for Cocos Creator
+# Cocos Creator 伪3D组件
 
-### Summary
+### 简介
 
-Simple pseudo 3D perspective components for cocos creator(^1.9, ^2.1).
+3D的替代品，可以用于一些简单的类3D游戏，建议cocos creator版本： `^1.9.1` `^2.1.1`
 
-### Preview
+### 预览
 
-* Demo Project
+* 示例项目
 
 ![preview](/preview/preview.gif)
 
-* Golf Game(Non-opensource)
+* 高尔夫球游戏(未开源)
 
 ![preview](/preview/preview_golf.gif)
+
+> 试玩地址: [https://wheatup.itch.io/golf](https://wheatup.itch.io/golf)
